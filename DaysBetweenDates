@@ -1,0 +1,18 @@
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.temporal.ChronoUnit;
+
+public class App {
+    public static void main(String[] args) {
+      //From date
+      LocalDate dateFrom = LocalDate.of(2022, Month.APRIL, 04);
+      //To date
+      LocalDate dateTo = LocalDate.of(2022, Month.JUNE, 28);
+      //The number of days between these days
+      long noOfDaysBetween = ChronoUnit.DAYS.between(dateFrom, dateTo);
+      
+      System.out.println(noOfDaysBetween);
+    
+    }
+    
+}
